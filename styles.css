@@ -1,0 +1,208 @@
+body {
+  background-color: rgb(223, 223, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(44, 44, 44);
+  width: 500px;
+  height: 50px;
+  color: white;
+  gap: 150px;
+  padding-left: 20px;
+  position: relative;
+}
+.text1 {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 180px;
+}
+.slash {
+  margin-top: -0px;
+  color: rgba(255, 255, 255, 0.318);
+  position: absolute;
+  margin-left: 430px;
+}
+.chat {
+  background-image: url(IMAGE\ 2025-09-11\ 19:45:03.jpg);
+  width: 510px;
+  height: 750px;
+  padding-left: 10px;
+}
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 24px;
+}
+.message {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  border-radius: 12px;
+  line-height: 10px;
+  font-size: 17px;
+  gap: 1px;
+}
+
+.time {
+  margin-left: 350px;
+  font-size: 13px;
+}
+.pfp {
+  display: flex;
+  flex-direction: row;
+}
+.message1 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 100px;
+  padding-left: 5px;
+}
+.message2 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  width: 250px;
+  height: 65px;
+  margin-top: 18px;
+  margin-left: 20px;
+  border-radius: 12px;
+  padding-left: 5px;
+}
+.message3 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  width: 250px;
+  height: 60px;
+  line-height: 10px;
+  border-radius: 12px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  margin-left: 80px;
+  margin-top: -73px;
+  padding-left: 5px;
+}
+.mgzh {
+  display: flex;
+  flex-direction: row;
+  line-height: 7px;
+}
+.time2 {
+  font-size: 13px;
+  margin-left: 200px;
+  margin-top: -12px;
+}
+.time3 {
+  font-size: 13px;
+  margin-left: 200px;
+}
+.message4 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  line-height: 10px;
+  border-radius: 12px;
+  width: 400px;
+  padding-top: 1px;
+  margin-left: 80px;
+  margin-top: -70px;
+  border-radius: 12px;
+  padding-left: 5px;
+}
+.message5 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  width: 400px;
+  margin-left: 80px;
+  margin-top: -70px;
+  border-radius: 12px;
+  padding-top: 1px;
+  line-height: 10px;
+  padding-left: 5px;
+}
+.message6 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  width: 400px;
+  margin-left: 80px;
+  margin-top: -70px;
+  border-radius: 12px;
+  padding-top: 1px;
+  line-height: 10px;
+  padding-left: 5px;
+}
+.islambek {
+  margin-top: 10px;
+}
+.alibek {
+  margin-top: 10px;
+}
+.message7 {
+  background-color: rgb(53, 46, 60);
+  color: white;
+  width: 400px;
+  margin-left: 80px;
+  margin-top: -70px;
+  border-radius: 12px;
+  padding-top: 2px;
+  line-height: 10px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+}
+.nurba {
+  margin-top: 10px;
+}
+.messimg {
+  width: 520px;
+  height: 55px;
+  border-radius: 0;
+  margin-top: -10px;
+}
+input {
+  border: none;
+  padding: 10px;
+  width: 400px;
+  height: 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.27);
+  position: relative;
+}
+.messinput {
+  position: absolute;
+  margin-top: -52px;
+  margin-left: 50px;
+}
+.sticker {
+  position: absolute;
+  margin-top: -52px;
+  margin-left: 430px;
+  width: 40px;
+  height: 40px;
+}
+.messinput:hover {
+  background-color: rgb(26, 26, 26);
+}
+.nurbakyt {
+  margin-top: 10px;
+}
+.back {
+  width: 200px;
+}

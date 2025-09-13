@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: rgb(205, 205, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+      }
+      .topcontainer {
+        background-color: rgb(25, 25, 25);
+        margin-top: 10px;
+        width: 500px;
+        z-index: 2;
+        padding: 10px;
+        height: 162px;
+        padding-bottom: 110px;
+      }
+      .heading {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        background-color: rgb(25, 25, 25);
+        gap: 170px;
+        margin-left: -10px;
+        margin-top: -19px;
+      }
+      img {
+        width: 60px;
+        border-radius: 50%;
+      }
+      .story {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        border: 3px solid rgb(96, 96, 234);
+      }
+      .storydiv {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        margin-left: 80px;
+      }
+      .group {
+        display: flex;
+        flex-direction: column;
+        line-height: 2px;
+      }
+      .bro {
+        margin-left: 20px;
+      }
+      .minnie {
+        margin-left: 6px;
+      }
+      .input-box {
+        display: flex;
+        flex-direction: row;
+        width: 390px;
+        background-color: rgb(15, 15, 15);
+        margin-left: 55px;
+        height: 40px;
+        border-radius: 12px;
+      }
+
+      input {
+        border: none;
+        background-color: rgb(15, 15, 15);
+        padding-left: 120px;
+      }
+      .lupa {
+        width: 45px;
+        height: 48px;
+        margin-top: -4px;
+        border-radius: 40px 20px 20px 40px;
+      }
+      .message {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        width: 300px;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .forleft {
+        margin-left: 10px;
+      }
+      .dohwa {
+        height: 60px;
+        margin-top: -0.5px;
+      }
+      .bottomcontainer {
+        width: 500px;
+        background-color: black;
+        padding-bottom: 50px;
+        z-index: 1;
+        padding: 10px;
+        padding-top: 0.5px;
+        padding-bottom: 60px;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        width: 520px;
+        background-color: rgb(27, 27, 27);
+        justify-content: center;
+        padding: 1px;
+      }
+      .bott {
+        display: flex;
+        flex-direction: column;
+        line-height: 3px;
+      }
+      .settings {
+        width: 50px;
+        height: 50px;
+      }
+      .message:hover {
+        background-color: rgb(22, 22, 22);
+      }
+
+      body {
+        background-color: rgb(98, 98, 98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 5px;
+      }
+      .heading {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(25, 25, 25);
+        width: 500px;
+        height: 50px;
+        color: white;
+        gap: 150px;
+        padding-left: 20px;
+        position: relative;
+      }
+      .text1 {
+        text-align: center;
+        margin-top: 10px;
+        position: absolute;
+        margin-left: 180px;
+      }
+      .slash {
+        margin-top: -0px;
+        color: rgba(255, 255, 255, 0.318);
+        position: absolute;
+        margin-left: 430px;
+      }
+      .chat {
+        background-image: url(IMAGE\ 2025-09-11\ 19:45:03.jpg);
+        width: 510px;
+        height: 750px;
+        padding-left: 10px;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 24px;
+      }
+      .message {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        width: 400px;
+        margin-left: 70px;
+        border-radius: 12px;
+
+        font-size: 17px;
+
+        line-height: 20px;
+      }
+
+      .time {
+        margin-left: 350px;
+        font-size: 13px;
+      }
+      .pfp {
+        display: flex;
+        flex-direction: row;
+      }
+      .message1 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        border-radius: 12px;
+        margin-left: 20px;
+        margin-top: 10px;
+        height: 100px;
+        padding-left: 5px;
+      }
+      .message2 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        width: 250px;
+        height: 65px;
+        margin-top: 18px;
+        margin-left: 20px;
+        border-radius: 12px;
+        padding-left: 5px;
+      }
+      .message3 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        width: 250px;
+        height: 60px;
+        line-height: 10px;
+        border-radius: 12px;
+        padding-top: 1px;
+        padding-bottom: 20px;
+        margin-left: 80px;
+        margin-top: -73px;
+        padding-left: 5px;
+      }
+      .mgzh {
+        display: flex;
+        flex-direction: row;
+        line-height: 7px;
+      }
+      .time2 {
+        font-size: 13px;
+        margin-left: 200px;
+        margin-top: -12px;
+      }
+      .time3 {
+        font-size: 13px;
+        margin-left: 200px;
+      }
+      .message4 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        line-height: 10px;
+        border-radius: 12px;
+        width: 400px;
+        padding-top: 1px;
+        margin-left: 80px;
+        margin-top: -70px;
+        border-radius: 12px;
+        padding-left: 5px;
+      }
+      .message5 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        width: 400px;
+        margin-left: 80px;
+        margin-top: -70px;
+        border-radius: 12px;
+        padding-top: 1px;
+        line-height: 10px;
+        padding-left: 5px;
+      }
+      .message6 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        width: 400px;
+        margin-left: 80px;
+        margin-top: -70px;
+        border-radius: 12px;
+        padding-top: 1px;
+        line-height: 10px;
+        padding-left: 5px;
+      }
+      .islambek {
+        margin-top: 10px;
+      }
+      .alibek {
+        margin-top: 10px;
+      }
+      .message7 {
+        background-color: rgb(53, 46, 60);
+        color: white;
+        width: 400px;
+        margin-left: 80px;
+        margin-top: -70px;
+        border-radius: 12px;
+        padding-top: 2px;
+        line-height: 10px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+      }
+      .nurba {
+        margin-top: 10px;
+      }
+      .messimg {
+        width: 520px;
+        height: 55px;
+        border-radius: 0;
+        margin-top: -10px;
+      }
+      input {
+        border: none;
+        padding: 10px;
+        width: 400px;
+        height: 20px;
+        border-radius: 25px;
+        font-size: 20px;
+        background-color: black;
+        color: rgba(255, 255, 255, 0.27);
+        position: relative;
+      }
+      .messinput {
+        position: absolute;
+        margin-left: -470px;
+      }
+      .sticker {
+        position: absolute;
+        margin-top: -52px;
+        margin-left: 430px;
+        width: 40px;
+        height: 40px;
+      }
+      .messinput:hover {
+        background-color: rgb(26, 26, 26);
+      }
+      .nurbakyt {
+        margin-top: 10px;
+      }
+      .back {
+        width: 200px;
+      }
+      .skz {
+        margin-top: 0px;
+      }
+      .headphoto {
+        margin-top: 0px;
+        border-radius: 0;
+        height: 50px;
+        margin-left: 40px;
+        border-right: 1px solid rgba(255, 255, 255, 0.191);
+      }
+
+      .akniet,
+      .buddy,
+      .medina,
+      .savedimg {
+        margin-top: 0px;
+      }
+      .mychn {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+      .bottph {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topcontainer">
+        <div class="heading">
+          <p style="color: rgb(110, 149, 254)">Change</p>
+          <p>Chats</p>
+          <img class="headphoto" src="IMAGE 2025-09-10 19:17:12.jpg" />
+        </div>
+        <div class="storydiv">
+          <div class="group">
+            <img class="story" src="IMAGE 2025-09-10 18:42:38.jpg" />
+            <p>My stories</p>
+          </div>
+          <div class="group">
+            <img class="story" src="IMAGE 2025-09-10 18:44:31.jpg" />
+            <p class="minnie">Minnie</p>
+          </div>
+          <div class="group">
+            <img
+              class="story"
+              src="IMAGE 2025-09-10 19:19:53.jpg"
+              style="height: 50px"
+            />
+            <p class="bro">bro</p>
+          </div>
+        </div>
+        <div class="input-box">
+          <img class="lupa" src="IMAGE 2025-09-10 19:23:28.jpg" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="message">
+          <img class="dohwa" src="photo_2025-09-10 16.02.24.jpeg" />
+          <p class="mychn">
+            <b>6533322</b><br /><span style="color: rgba(255, 255, 255, 0.54)"
+              >some quotes</span
+            >
+          </p>
+          <p style="margin-left: 175px">3:57PM</p>
+        </div>
+      </div>
+      <div class="bottomcontainer">
+        <div class="message">
+          <img class="skz" src="photo_2025-09-10 16.02.22.jpeg" />
+          <p class="forleft" style="margin-top: 5px">
+            <b>Stray Kids / JYP</b><br /><span
+              class="href"
+              style="color: rgba(255, 255, 255, 0.54)"
+            >
+              https://youtu.be/BR_7CF8v744? si=nF07yJhLxyZk6-jB</span
+            >
+          </p>
+          <p style="margin-left: 20px">4:00PM</p>
+        </div>
+        <div class="message">
+          <img class="savedimg" src="photo_2025-09-10 16.02.25.jpeg" />
+          <p class="forleft" style="margin-top: 5px">
+            <b>Saved Messages</b><br /><span
+              style="color: rgba(255, 255, 255, 0.54)"
+            >
+              6 photos >
+            </span>
+          </p>
+          <p style="margin-left: 190px">4:00PM</p>
+        </div>
+        <div class="message">
+          <img class="medina" src="photo_2025-09-10 16.02.20.jpeg" />
+          <p class="forleft">
+            <b>Medina</b><br /><span style="color: rgba(255, 255, 255, 0.54)"
+              >ok</span
+            >
+          </p>
+          <p style="margin-left: 214px">3:53PM</p>
+        </div>
+        <div class="message">
+          <img class="akniet" src="photo_2025-09-10 16.02.11.jpeg" />
+          <p class="forleft">
+            <b>Akniyet</b><br /><span style="color: rgba(255, 255, 255, 0.54)"
+              >Hello</span
+            >
+          </p>
+          <p style="margin-left: 210px">3:52PM</p>
+        </div>
+        <div class="message">
+          <img class="buddy" src="photo_2025-09-10 16.02.18.jpeg" />
+          <p class="forleft" style="width: 900px">
+            <b> Buddy Music</b><br />
+            <span style="color: rgba(255, 255, 255, 0.54)">🎧 music</span>
+          </p>
+          <p>3:51PM</p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="bott">
+          <img
+            class="bottph"
+            style="width: 60px"
+            src="IMAGE 2025-09-10 19:35:12.jpg"
+          />
+          <p style="margin-left: 3px">Contacts</p>
+        </div>
+        <div class="bott">
+          <img class="bottph" src="IMAGE 2025-09-10 19:35:16.jpg" />
+          <p>
+            <span style="margin-left: 16px">Calls</span>
+          </p>
+        </div>
+        <div class="bott">
+          <img
+            class="bottph"
+            style="margin-top: 30px"
+            src="IMAGE 2025-09-10 19:35:19.jpg"
+          />
+          <p style="margin-top: 5px">
+            <span style="margin-left: 12px">Chats</span>
+          </p>
+        </div>
+        <div class="bott">
+          <img
+            class="settings"
+            style="margin-top: 30px"
+            src="IMAGE 2025-09-10 19:35:22.jpg"
+          />
+          <p style="margin-top: 10px">
+            <span style="margin-left: 3px">Settings</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="heading">
+        <p style="color: rgb(77, 127, 255)" class="back">< Back</p>
+        <p class="text1">
+          <b>General</b><br /><span style="color: rgba(255, 255, 255, 0.575)">
+            325 messages</span
+          >
+        </p>
+        <h2 class="slash" style="font-size: 40px">#</h2>
+      </div>
+      <div class="chat">
+        <div class="pfp">
+          <img class="image" src="IMAGE 2025-09-11 19:44:58.jpg" />
+          <div class="message1">
+            <p style="color: rgb(221, 109, 109)"><b>Zhansaya Tazhibayeva</b></p>
+            <p>Negizi jatada kalatindar bar ma?</p>
+            <p class="time">5:01PM</p>
+          </div>
+        </div>
+        <div class="mgzh">
+          <img src="IMAGE 2025-09-11 19:44:54.jpg" />
+          <div class="message2">
+            <p style="color: rgb(175, 142, 241)"><b>Magzhan</b></p>
+            <p>Zhatpaityn 5-6au ak</p>
+            <p class="time2">5:02PM</p>
+          </div>
+        </div>
+        <img src="IMAGE 2025-09-11 19:44:58.jpg" />
+        <div class="message3">
+          <p style="color: rgb(221, 109, 109)"><b>Zhansaya Tazhibayeva</b></p>
+          <p>aa jaksi</p>
+          <p class="time3">5:02PM</p>
+        </div>
+        <img src="IMAGE 2025-09-11 19:44:50.jpg" />
+        <div class="message4">
+          <p style="color: rgb(218, 132, 238)"><b>Ansar</b></p>
+          <p>https:// shadowmonarchsss.github.io/ntr/</p>
+          <p class="time">5:40PM</p>
+        </div>
+        <img class="islambek" src="IMAGE 2025-09-11 19:44:56.jpg" />
+        <div class="message5">
+          <p style="color: rgb(56, 201, 92)"><b>Islambek</b></p>
+          <p style="line-height: 20px">
+            https://islambek4067.github.io/ Equilibrium-project-in-classwork/
+          </p>
+          <p class="time">5:43PM</p>
+        </div>
+        <img class="alibek" src="IMAGE 2025-09-11 19:44:50.jpg" />
+        <div class="message6">
+          <p style="color: rgb(218, 132, 238)"><b>Alibek</b></p>
+          <p>https://alibekserikbay-wq.github.io/ project/</p>
+          <p class="time">5:45PM</p>
+        </div>
+        <img class="nurba" src="IMAGE 2025-09-11 19:44:52.jpg" />
+        <div class="message7">
+          <p style="color: rgb(251, 198, 98)"><b>Nurbakyt</b></p>
+          <p class="nurbakyt">
+            https://nurbagytoralbai- dev.github.io/project/
+          </p>
+          <p class="time">5:45PM</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <img class="messimg" src="IMAGE 2025-09-12 10:00:51.jpg" />
+        <div class="input">
+          <input class="messinput" type="text" placeholder="Message" />
+          <img class="sticker" src="IMAGE 2025-09-12 10:00:45.jpg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
